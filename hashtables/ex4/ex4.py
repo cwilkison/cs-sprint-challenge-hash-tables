@@ -2,7 +2,18 @@ def has_negatives(a):
     """
     YOUR CODE HERE
     """
-    # Your code here
+    cache = {}
+    result = []
+
+    for integer in a:
+        # check all numbers not 0
+        if integer != 0:
+            # add integer to cache
+            cache[integer] = True
+            # if integer has opposite integer in cache....
+            if -integer in cache:
+                # append absolute integer to results array
+                result.append(abs(integer))
 
     return result
 
