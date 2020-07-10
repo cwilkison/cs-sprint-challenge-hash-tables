@@ -29,3 +29,5 @@ def reconstruct_trip(tickets, length):
             route[i] = cache[route[i-1]]
 
     return route
+
+    ##MVP
